@@ -63,7 +63,7 @@ app.get('/admin', (req, res) => {
 });
 app.get('*', (req, res, next) => {
   if (req.path.startsWith('/api/')) return next();
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'admin.html'));
 });
 
 // Central error handler
