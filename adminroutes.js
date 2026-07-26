@@ -1,5 +1,5 @@
 const express = require('express');
-const { readData, writeData } = require('../utils/db');
+const { readData, writeData } = require('./db');
 const { requireAuth, requireAdmin } = require('./auth');
 
 const router = express.Router();
